@@ -20,11 +20,12 @@
 
     #如果以上引用不好用,可以自行下载编译
 ##调用方法
+
     public static final Option<String> HA_ZOOKEEPER_QUORUM =
-                key("high-availability.zookeeper.quorum")
-                        .noDefaultValue()
-                        .withDeprecatedKeys("recovery.zookeeper.quorum")
-                        .withDescription("The ZooKeeper quorum to use, when running Flink in a high-availability mode with ZooKeeper.");
+        key("high-availability.zookeeper.quorum")
+            .noDefaultValue()
+            .withDeprecatedKeys("recovery.zookeeper.quorum")
+            .withDescription("The ZooKeeper quorum to use, when running Flink in a high-availability mode with ZooKeeper.");
     
     Configuration configuration = new Configuration();
     //设置监听,当有变化的时候进行通知
